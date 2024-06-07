@@ -114,11 +114,46 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+.first-letter-caps{
+  text-transform: capitalize;
+}
+.single-letter-caps::first-letter{
+text-transform: uppercase;
+}
+.wrapper{
+width: 68%;
+}
+header {
+  width: 100%;
+  padding-bottom: 0px;
+  padding-top: 20px;
+  position: absolute;
+  top: 0%;
+  z-index: 2;
+}
 
+header .wrapper{
+display:flex ;
+justify-content: space-between;
+}
+h1 a{
+  color: aliceblue;
+    font-size: 13px;
+    font-weight: 600;
+}
 
+.nav-list a{
+  color: aliceblue;
+    font-size: 10px;
+}
 
-
-
+nav{
+  width: 20%;
+}
+.nav-list {
+ display: flex;
+ justify-content: space-between;
+}
 
 /*=================================
   Header styling ends here
