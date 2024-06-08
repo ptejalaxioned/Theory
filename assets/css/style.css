@@ -344,9 +344,64 @@ nav {
   card styling ends here
 =================================*/
 /*=================================
+  people styling starts here
+=================================*/
+.people {
+  padding-bottom: 90px;
+  padding-top: 78px;
+  background-color: #5386c1;
+  color: aliceblue;
+}
+
+.people-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.people-list li {
+  width: 21%;
+  padding: 36px 0px;
+  border: 0.5px solid #f0f8ff5c;
+}
+
+.people-list figure {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 22px;
+}
+
+.people-list figure img {
+  border-radius: 70px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.common-heading {
+  margin-bottom: 16px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.common-para {
+  margin-bottom: 47px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.info-down {
+  margin-top: 4px;
+  font-size: 11px;
+}
+/*=================================
+  people styling ends here
+=================================*/
+/*=================================
   main styling ends here
 =================================*/
-
 /*=================================
   footer styling starts here
 =================================*/
