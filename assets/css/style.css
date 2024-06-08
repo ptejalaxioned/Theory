@@ -501,3 +501,34 @@ footer a::before {
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 }
+
+/*================================= 
+ Hover styling starts here
+ =================================*/
+@media only screen and (min-width: 995px) {
+  h1 a:hover {
+    color: #5386c1;
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .nav-list a:hover {
+    color: #5386c1;
+    cursor: pointer;
+    transition: all 1s;
+  }
+
+  .card-button:hover {
+    background-color: #808080;
+    cursor: pointer;
+    transition: all 1s;
+  }
+  footer a:hover::before {
+    color: #808080;
+    cursor: pointer;
+    transition: all 1s;
+  }
+}
+/*================================= 
+ Hover styling ends here
+ =================================*/
