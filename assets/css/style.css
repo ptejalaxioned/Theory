@@ -381,7 +381,7 @@ nav {
 }
 
 .common-heading {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   font-size: 30px;
   text-align: center;
 }
@@ -398,6 +398,42 @@ nav {
 }
 /*=================================
   people styling ends here
+=================================*/
+/*=================================
+  more styling starts here
+=================================*/
+.more {
+  padding: 76px 0px 0px;
+}
+
+.more .wrapper {
+  padding-bottom: 76px;
+  border-bottom: 0.5px solid #808080a0;
+}
+
+.more-list {
+  display: flex;
+  gap: 50px;
+}
+
+.more-list li {
+  display: flex;
+  flex-direction: column;
+}
+
+.more-list li figure {
+  margin-bottom: 23px;
+}
+
+.more .common-heading {
+  color: #5386c1;
+}
+
+.more .common-para {
+  color: #858484;
+}
+/*=================================
+  more styling ends here
 =================================*/
 /*=================================
   main styling ends here
