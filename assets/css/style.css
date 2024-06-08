@@ -8,13 +8,87 @@
    v2.0 | 20110126
    License: none (public domain)
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
-ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
-figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -24,17 +98,30 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
 /* Force scrollbar */
-html { overflow-y: scroll; }
+html {
+  overflow-y: scroll;
+}
 
 /* Align radios and text inputs with their label */
 
-input[type='radio'] { vertical-align: text-bottom; }
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
 
 /* Hand cursor on clickable input elements */
 label,
@@ -50,7 +137,9 @@ strong {
   font-size: inherit;
 }
 
-em { font-style: italic; }
+em {
+  font-style: italic;
+}
 
 img {
   width: 100%;
@@ -66,8 +155,12 @@ sup {
   line-height: 0;
 }
 
-sup { top: -.7em; }
-sub { bottom: -.25em; }
+sup {
+  top: -0.7em;
+}
+sub {
+  bottom: -0.25em;
+}
 
 /* 1.2. Clear Fix
    ========================== */
@@ -75,11 +168,12 @@ sub { bottom: -.25em; }
 .cf:before,
 .cf:after {
   display: table;
-  content: " ";
+  content: ' ';
 }
 
-.cf:after { clear: both; }
-
+.cf:after {
+  clear: both;
+}
 
 /*for all*/
 body {
@@ -87,9 +181,9 @@ body {
   font-family: sans-serif;
 }
 
-a { 
+a {
   display: inline-block;
-  text-decoration: none; 
+  text-decoration: none;
 }
 
 li {
@@ -100,7 +194,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 86%;
   margin: 0 auto;
 }
 *,
@@ -114,61 +208,59 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
-.first-letter-caps{
+.first-letter-caps {
   text-transform: capitalize;
 }
-.single-letter-caps::first-letter{
-text-transform: uppercase;
+
+.single-letter-caps::first-letter {
+  text-transform: uppercase;
 }
-.wrapper{
-width: 68%;
+
+.wrapper {
+  width: 68%;
 }
+
 header {
   width: 100%;
   padding-bottom: 0px;
-  padding-top: 20px;
+  padding-top: 60px;
   position: absolute;
-  top: 0%;
   z-index: 2;
+  top: 0%;
 }
 
-header .wrapper{
-display:flex ;
-justify-content: space-between;
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
 }
-h1 a{
+
+h1 a {
   color: aliceblue;
-    font-size: 13px;
-    font-weight: 600;
+  font-size: 15px;
+  font-weight: 500;
 }
 
-.nav-list a{
+.nav-list a {
   color: aliceblue;
-    font-size: 10px;
+  font-size: 12px;
 }
 
-nav{
-  width: 20%;
+nav {
+  width: 14%;
 }
+
 .nav-list {
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 /*=================================
   Header styling ends here
-=================================*/  
+=================================*/
 
 /*=================================
   main styling starts here
 =================================*/
-
-
-
-
-
-
-
 
 /*=================================
   main styling ends here
@@ -176,22 +268,13 @@ nav{
 
 /*=================================
   footer styling starts here
-=================================*/ 
+=================================*/
 
-
-
-
-
-
-
- /*=================================
+/*=================================
   footer styling ends here
-=================================*/ 
+=================================*/
 
 /*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-
-
-
-}  
+}
