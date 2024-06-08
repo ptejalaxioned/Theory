@@ -328,7 +328,7 @@ nav {
 .card-para {
   padding: 16px 0px 24px;
   color: #858484;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 18px;
 }
 
@@ -337,7 +337,7 @@ nav {
   border: none;
   background-color: #5386c1;
   color: aliceblue;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
 }
 /*=================================
@@ -371,7 +371,7 @@ nav {
 }
 
 .people-list figure img {
-  border-radius: 70px;
+  border-radius: 100px;
 }
 
 .info {
