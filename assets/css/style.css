@@ -246,22 +246,53 @@ h1 a {
 }
 
 nav {
-  width: 14%;
+  width: 19%;
 }
 
 .nav-list {
   display: flex;
   justify-content: space-between;
 }
-
 /*=================================
   Header styling ends here
 =================================*/
-
 /*=================================
   main styling starts here
 =================================*/
+/*=================================
+  banner styling starts here
+=================================*/
+.banner img {
+  border-top: 8px solid #5386c1;
+  position: relative;
+  z-index: 1;
+  top: 0%;
+  left: 0%;
+}
 
+.banner-content {
+  position: absolute;
+  z-index: 3;
+  top: 30%;
+  left: 50%;
+  color: aliceblue;
+  transform: translate(-50%, -50%);
+}
+
+.banner-content h2 {
+  font-size: 44px;
+  font-weight: 100;
+  line-height: 80px;
+}
+
+.banner-content p {
+  font-size: 13px;
+  font-weight: 100;
+  text-align: center;
+}
+/*=================================
+  banner styling ends here
+=================================*/
 /*=================================
   main styling ends here
 =================================*/
