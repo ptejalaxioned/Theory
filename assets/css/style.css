@@ -561,6 +561,21 @@ footer a::before {
   }
 }
 
+
+/*media query for 1024px starts here*/
+@media only screen and (max-width: 1024px) {
+  .banner img {
+    height: 53vh;
+    object-fit: cover;
+ }
+ 
+ .wrapper {
+  width: 89%;
+ }
+ }
+ 
+ 
+ 
 /*================================= 
  Hover styling starts here
  =================================*/
