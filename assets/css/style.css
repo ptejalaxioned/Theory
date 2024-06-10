@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 @charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code
@@ -177,7 +184,8 @@ sub {
 
 /*for all*/
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -202,7 +210,8 @@ li {
 *::after {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 /*=================================
@@ -227,9 +236,15 @@ header {
 }
 
 header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 h1 a {
@@ -247,8 +262,12 @@ h1 a {
 nav { width: 19.5%; }
 
 .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hamburger {
@@ -260,12 +279,19 @@ nav { width: 19.5%; }
 .hamburger {
   padding-top: 10px;
   display: none;
-  justify-content: center;
-  flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 3px;
 }
 
 .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   line-height: 4px;
   text-indent: -9999px;
@@ -273,17 +299,31 @@ nav { width: 19.5%; }
 
 .line2-onclick {
   display: none;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
 .line1-onclick {
-  transform: rotate(-45deg) translateY(9px);
+  -webkit-transform: rotate(-45deg) translateY(9px);
+      -ms-transform: rotate(-45deg) translateY(9px);
+          transform: rotate(-45deg) translateY(9px);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .line3-onclick {
-  transform: rotate(45deg) translateY(-1px);
+  -webkit-transform: rotate(45deg) translateY(-1px);
+      -ms-transform: rotate(45deg) translateY(-1px);
+          transform: rotate(45deg) translateY(-1px);
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  -o-transition: transform 1s;
   transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
 }
 
 .line::before {
@@ -292,7 +332,9 @@ nav { width: 19.5%; }
   border-bottom: 3px solid var(--secondary-color);
   border-radius: 2px;
   display: inline-block;
-  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 /*=================================
   Header styling ends here
@@ -314,7 +356,9 @@ nav { width: 19.5%; }
   left: 50%;
   top: 49%;
   color: var(--secondary-color);
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .banner-content h2 {
@@ -334,7 +378,7 @@ nav { width: 19.5%; }
 /*=================================
   card styling starts here
 =================================*/
-.card-list { display: flex; }
+.card-list { display: -webkit-box; display: -ms-flexbox; display: flex; }
 .card { padding: 73px 0px 69px; }
 
 .card-list li {
@@ -383,8 +427,12 @@ nav { width: 19.5%; }
 }
 
 .people-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .people-list li {
@@ -402,9 +450,16 @@ nav { width: 19.5%; }
 .people-list figure img { border-radius: 100px; }
 
 .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .common-heading {
@@ -437,13 +492,20 @@ nav { width: 19.5%; }
 }
 
 .more-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 50px;
 }
 
 .more-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .more-list li figure { margin-bottom: 23px; }
@@ -466,21 +528,31 @@ footer span {
 }
 
 footer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 15px;
 }
 
 footer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-indent: -9999px;
 }
 
 footer a::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: var(--primary-color);
   font-family: "FontAwesome";
@@ -515,7 +587,8 @@ footer a::before {
 @media only screen and (max-width: 1024px) {
   .banner img {
     height: 53vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .wrapper { width: 89%;}
@@ -530,6 +603,8 @@ footer a::before {
   .wrapper { width: 85%;}
 
   .hamburger {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     z-index: 3;
   }
@@ -537,18 +612,37 @@ footer a::before {
   .line { border-color: var(--secondary-color); }
 
   .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 15px;
     gap: 20px;
-    transform: translateX(-1000px);
+    -webkit-transform: translateX(-1000px);
+        -ms-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
     transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
   }
 
   .nav-list-onclick {
-    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+            transform: translateX(0px);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
     transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
   }
 
   .body-onclick { overflow: hidden;}
@@ -556,13 +650,18 @@ footer a::before {
   .nav-list {
     width: 100%;
     height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: absolute;
     z-index: 3;
     right: 0%;
     top: 131%;
     background-color: var(--primary-color);
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
   }
 
@@ -578,7 +677,8 @@ footer a::before {
 =================================*/
   .banner img {
     height: 60vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   /*=================================
 banner styling ends here
@@ -587,8 +687,11 @@ banner styling ends here
   card section styling starts here
 =================================*/
   .card-list {
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .card-list li {
@@ -611,8 +714,11 @@ banner styling ends here
   people section styling starts here
 =================================*/
   .people-list {
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 38px;
   }
 
@@ -624,8 +730,11 @@ banner styling ends here
   more section styling starts here
 =================================*/
   .more-list {
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 
   .more-list li { width: 40%; }
@@ -676,7 +785,8 @@ banner styling ends here
   .banner figure img {
     width: 100%;
     height: 56vh;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .banner p { font-size: 17px; }
@@ -700,8 +810,13 @@ banner styling ends here
   card section styling starts here
 =================================*/
   .card-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .card-list li {
@@ -757,7 +872,10 @@ banner styling ends here
   .common-heading { font-size: 32px; }
 
   .people-list {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 33px;
   }
 
@@ -789,9 +907,14 @@ banner styling ends here
   more section styling starts here
 =================================*/
   .more-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 35px;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
   }
 
@@ -806,13 +929,18 @@ banner styling ends here
   footer section styling ends here
 =================================*/
   footer .wrapper {
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     gap: 30px;
     text-align: center;
   }
 
   footer ul {
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 20px;
   }
 
@@ -991,24 +1119,32 @@ banner styling ends here
   h1 a:hover {
     color: #5386c1;
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
   .nav-list a:hover {
     color: #5386c1;
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
   .card-button:hover {
     background-color: #808080;
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 
   footer a:hover::before {
     color: #808080;
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
   }
 }
