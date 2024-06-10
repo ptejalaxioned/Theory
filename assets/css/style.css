@@ -941,6 +941,120 @@ banner styling ends here
 =================================*/
 }
 
+/*media query for 375px starts here*/
+@media only screen and (max-width: 375px) {
+  /*=================================
+  header section styling starts here
+=================================*/
+  .wrapper {
+    width: 90%;
+  }
+/*=================================
+  header section styling ends here
+=================================*/
+/*=================================
+  banner section styling starts here
+=================================*/
+  .banner p {
+    font-size: 13px;
+  }
+ 
+  .banner-content h2 {
+    margin-bottom: 9px;
+    font-size: 35px;
+    line-height: 35px;
+  }
+  /*=================================
+  banner section styling ends here
+=================================*/
+/*=================================
+  card section styling starts here
+=================================*/
+  .card {
+    padding-bottom: 36px;
+    padding-top: 28px;
+  }
+ 
+  .card-para {
+    padding: 10px 0px 21px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+ 
+  .card-heading {
+    font-size: 21px;
+    line-height: 22px;
+  }
+ 
+  .card-button {
+    padding: 9px 18px;
+    font-size: 14px;
+  }
+
+  .card-list li {
+    padding: 30px 0px;
+  }
+ /*=================================
+  card section styling ends here
+=================================*/
+  .common-heading {
+    font-size: 27px;
+  }
+ 
+  .common-para {
+    font-size: 14px;
+  }
+ 
+  .info-up {
+    font-size: 19px;
+  }
+ 
+  .info-down {
+    font-size: 14px;
+  }
+ 
+  .more-list li figure {
+    margin-bottom: 21px;
+  }
+  /*=================================
+  people section styling starts here
+=================================*/
+  .people-list {
+    gap: 30px;
+  }
+ 
+  .people-list li {
+    width: 90%;
+    padding: 30px 0px;
+    margin: auto;
+  }
+ 
+  .people {
+    padding-bottom: 49px;
+    padding-top: 33px;
+  }
+ /*=================================
+  people section styling ends here
+=================================*/
+ /*=================================
+  footer section styling starts here
+=================================*/
+  footer ul {
+    gap: 15px;
+  }
+ 
+  footer a::before {
+    font-size: 16px;
+  }
+ 
+  footer span {
+    font-size: 11px;
+  }
+/*=================================
+  footer section styling ends here
+=================================*/
+ }
+  
 /*================================= 
  Hover styling starts here
  =================================*/
