@@ -193,7 +193,7 @@ li {
 
 /*for wrapper*/
 .wrapper {
-  max-width: 1360px;
+  max-width: 1920px;
   width: 86%;
   margin: 0 auto;
 }
@@ -297,6 +297,7 @@ nav {
 /*=================================
   Header styling ends here
 =================================*/
+
 /*=================================
   main styling starts here
 =================================*/
@@ -305,16 +306,22 @@ nav {
 =================================*/
 .banner img {
   border-top: 8px solid #5386c1;
-  position: relative;
-  z-index: 1;
-  top: 0%;
-  left: 0%;
 }
+
+
+.banner{
+  position: relative;
+}
+
+.banner .wrapper
+  {
+  width: 100%;
+  }
 
 .banner-content {
   position: absolute;
   z-index: 3;
-  top: 30%;
+  top: 27%;
   left: 50%;
   color: aliceblue;
   transform: translate(-50%, -50%);
@@ -559,6 +566,9 @@ footer a::before {
   nav {
     width: 19%;
   }
+  .banner-content {
+    top: 33%;
+  }
 }
 
 /*media query for 1024px starts here*/
@@ -570,6 +580,10 @@ footer a::before {
 
   .wrapper {
     width: 89%;
+  }
+
+  .banner-content {
+    top: 31%;
   }
 }
 
@@ -621,7 +635,7 @@ footer a::before {
   banner styling starts here
 =================================*/
   .banner img {
-    height: 66vh;
+    height: 60vh;
     object-fit: cover;
   }
 
