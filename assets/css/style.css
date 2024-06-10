@@ -265,7 +265,7 @@ nav {
   display: none;
   justify-content: center;
   flex-direction: column;
-  gap: 5px;
+  gap: 3px;
 }
 
 .hamburger:hover .line2 {
@@ -276,23 +276,23 @@ nav {
 .hamburger:hover .line1 {
   margin-left: 10px;
   -webkit-transform: rotate(-45deg) translateY(4px);
-  transform: rotate(-45deg) translateY(6px);
+  transform: rotate(-45deg) translateY(4px);
 }
 
 .hamburger:hover .line3 {
   margin-left: 10px;
   -webkit-transform: rotate(45deg) translateY(-4px);
-  transform: rotate(45deg) translateY(-6px);
+  transform: rotate(45deg) translateY(-4px);
 }
 
 .line {
   content: '';
   width: 100%;
-  border-bottom: 3.5px solid black;
+  border-bottom: 3px solid aliceblue;
   border-radius: 8px;
   display: inline-block;
   transform: translateY(-5px);
-  width: 25px;
+  width: 17px;
 }
 /*=================================
   Header styling ends here
@@ -539,14 +539,66 @@ footer a::before {
 =================================*/
 
 /*media query starts*/
-/*media query for 375px starts here*/
-@media only screen and (max-width: 375px) {
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+  .banner img {
+    height: 66vh;
+    object-fit: cover;
+  }
+
+  .banner-content {
+    top: 34%;
+  }
+
+  .card-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-list li {
+    width: 50%;
+    border-bottom: 0.5px solid #808080a0;
+    text-align: center;
+  }
+
+  .card-list li:first-child {
+    padding-left: 45px;
+    padding-bottom: 45px;
+  }
+
+  .card-list li:last-child {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 45px;
+    border-left: none;
+    border-bottom: none;
+  }
+
+  .people-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 38px;
+  }
+
+  .people-list li {
+    width: 47%;
+  }
+
+  .more-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .more-list li {
+    width: 46.3%;
+  }
+
   .hamburger {
     display: flex;
     z-index: 3;
   }
   .line {
-    border-color: grey;
+    border-color: aliceblue;
   }
   .nav-list {
     display: flex;
@@ -569,6 +621,365 @@ footer a::before {
     flex-direction: column;
     background-color: #205ba5;
     text-align: center;
+  }
+}
+
+/*media query for 640px starts here*/
+@media only screen and (max-width: 640px) {
+  .banner-content h2 {
+    font-size: 36px;
+  }
+}
+
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  .banner figure img {
+    width: 100%;
+    height: 56vh;
+    object-fit: cover;
+  }
+
+  header {
+    padding-top: 33px;
+  }
+
+  .wrapper {
+    width: 85%;
+  }
+
+  .banner p {
+    font-size: 17px;
+  }
+
+  .banner-content h2 {
+    font-size: 43px;
+    margin-bottom: 28px;
+    text-align: center;
+    line-height: 24px;
+  }
+
+  .banner-content {
+    width: 90%;
+    z-index: 3;
+    top: 30.5%;
+    left: 49%;
+  }
+
+  .card-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-list li {
+    width: auto;
+    border-bottom: none;
+    text-align: center;
+  }
+
+  .card {
+    padding-bottom: 49px;
+    padding-top: 38px;
+  }
+
+  .card-list li {
+    padding: 40px 0px 43px;
+    border-top: 0.5px solid #808080a0;
+    border-left: none;
+    text-align: center;
+  }
+
+  .card-list li:first-child {
+    padding-top: 0px;
+    border-top: none;
+    padding-left: 0px;
+  }
+
+  .card-list li:last-child {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .card-button {
+    width: 100%;
+    font-size: 17px;
+    padding: 14px 18px;
+  }
+
+  .people-list {
+    flex-direction: column;
+    gap: 33px;
+  }
+
+  .people-list li {
+    width: 100%;
+    margin: auto;
+  }
+
+  .people {
+    padding-bottom: 63px;
+    padding-top: 38px;
+  }
+
+  .card-heading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .card-para {
+    font-size: 17px;
+    padding: 18px 28px 33px;
+    line-height: 24px;
+  }
+
+  .common-para {
+    margin-bottom: 33px;
+    font-size: 17px;
+  }
+
+  .common-heading {
+    font-size: 32px;
+  }
+
+  .people-list figure img {
+    border-radius: 124px;
+  }
+
+  .people-list figure {
+    width: 41%;
+    margin-bottom: 25px;
+  }
+
+  .info-up {
+    font-size: 23px;
+  }
+
+  .info-down {
+    margin-top: 7px;
+    font-size: 16px;
+  }
+
+  .people-list li {
+    padding: 50px 0px;
+  }
+
+  .more-list {
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .more {
+    padding: 36px 0px 0px;
+  }
+
+  .more .wrapper {
+    padding-bottom: 25px;
+  }
+
+  .more-list li {
+    width: auto;
+  }
+  .more-list li figure {
+    margin-bottom: 34px;
+  }
+
+  footer .wrapper {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 30px;
+  }
+
+  footer ul {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  footer a::before {
+    font-size: 18px;
+  }
+
+  footer span {
+    font-size: 14px;
+  }
+}
+
+/*media query for 375px starts here*/
+@media only screen and (max-width: 375px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .banner p {
+    font-size: 13px;
+  }
+
+  .banner-content h2 {
+    font-size: 35px;
+    margin-bottom: 9px;
+    line-height: 35px;
+  }
+
+  .card {
+    padding-bottom: 36px;
+    padding-top: 28px;
+  }
+
+  .card-para {
+    font-size: 14px;
+    padding: 10px 0px 21px;
+    line-height: 21px;
+  }
+
+  .card-heading {
+    font-size: 21px;
+    line-height: 22px;
+  }
+
+  .card-button {
+    font-size: 14px;
+    padding: 9px 18px;
+  }
+
+  .common-heading {
+    font-size: 27px;
+  }
+
+  .common-para {
+    font-size: 14px;
+  }
+
+  .info-up {
+    font-size: 19px;
+  }
+
+  .info-down {
+    font-size: 14px;
+  }
+
+  .more-list li figure {
+    margin-bottom: 21px;
+  }
+
+  .card-list li {
+    padding: 30px 0px;
+  }
+
+  .people-list {
+    gap: 30px;
+  }
+
+  .people-list li {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0px;
+  }
+
+  .people {
+    padding-bottom: 49px;
+    padding-top: 33px;
+  }
+
+  footer ul {
+    gap: 15px;
+  }
+
+  footer a::before {
+    font-size: 16px;
+  }
+
+  footer span {
+    font-size: 11px;
+  }
+}
+
+/*media query for 320px starts here*/
+@media only screen and (max-width: 320px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .banner p {
+    font-size: 13px;
+  }
+
+  .banner-content h2 {
+    font-size: 31px;
+    margin-bottom: 9px;
+    line-height: 35px;
+  }
+
+  .card {
+    padding-bottom: 36px;
+    padding-top: 28px;
+  }
+
+  .card-para {
+    font-size: 14px;
+    padding: 10px 0px 21px;
+    line-height: 21px;
+  }
+
+  .card-heading {
+    font-size: 21px;
+    line-height: 22px;
+  }
+
+  .card-button {
+    font-size: 14px;
+    padding: 9px 18px;
+  }
+
+  .common-heading {
+    font-size: 27px;
+  }
+
+  .common-para {
+    font-size: 14px;
+  }
+
+  .info-up {
+    font-size: 19px;
+  }
+
+  .info-down {
+    font-size: 14px;
+  }
+
+  .more-list li figure {
+    margin-bottom: 21px;
+  }
+
+  .card-list li {
+    padding: 30px 0px;
+  }
+
+  .people-list {
+    gap: 30px;
+  }
+
+  .people-list li {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0px;
+  }
+
+  .people {
+    padding-bottom: 49px;
+    padding-top: 33px;
+  }
+
+  footer ul {
+    gap: 15px;
+  }
+
+  footer a::before {
+    font-size: 16px;
+  }
+
+  footer span {
+    font-size: 11px;
   }
 }
 
