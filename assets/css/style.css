@@ -728,10 +728,217 @@ banner styling ends here
   .people-list li {
     width: 45%;
   }
-  
+
   .more-list li {
     width: 44%;
   }
+}
+
+/*media query for 480px starts here*/
+@media only screen and (max-width: 480px) {
+  /*=================================
+  header section styling starts here
+=================================*/
+  header {
+    padding-top: 33px;
+  }
+
+  .wrapper {
+    width: 85%;
+  }
+  /*=================================
+  header section styling endss here
+=================================*/
+  /*=================================
+  banner section styling starts here
+=================================*/
+
+  .banner figure img {
+    width: 100%;
+    height: 56vh;
+    object-fit: cover;
+  }
+
+  .banner p {
+    font-size: 17px;
+  }
+
+  .banner-content h2 {
+    margin-bottom: 28px;
+    font-size: 39px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .banner-content {
+    width: 90%;
+    z-index: 3;
+    top: 30.5%;
+    left: 49%;
+  }
+  /*=================================
+  banner section styling starts here
+=================================*/
+  /*=================================
+  card section styling starts here
+=================================*/
+  .card-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-list li {
+    width: auto;
+    border-bottom: none;
+    text-align: center;
+  }
+
+  .card {
+    padding-bottom: 49px;
+    padding-top: 38px;
+  }
+
+  .card-list li {
+    padding: 40px 0px 43px;
+    border-top: 0.5px solid #808080a0;
+    border-left: none;
+    text-align: center;
+  }
+
+  .card-list li:first-child {
+    padding-left: 0px;
+    padding-top: 0px;
+    border-top: none;
+  }
+
+  .card-list li:last-child {
+    padding-bottom: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .card-button {
+    width: 100%;
+    padding: 14px 18px;
+    font-size: 17px;
+  }
+
+  .card-heading {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .card-para {
+    padding: 18px 28px 33px;
+    font-size: 17px;
+    line-height: 24px;
+  }
+  /*=================================
+  card section styling ends here
+=================================*/
+  /*=================================
+  people section styling starts here
+=================================*/
+  .common-para {
+    margin-bottom: 33px;
+    font-size: 17px;
+  }
+
+  .common-heading {
+    font-size: 32px;
+  }
+
+  .people-list {
+    flex-direction: column;
+    gap: 33px;
+  }
+
+  .people-list li {
+    width: 100%;
+    margin: auto;
+  }
+
+  .people {
+    padding-bottom: 63px;
+    padding-top: 38px;
+  }
+
+  .people-list figure img {
+    border-radius: 124px;
+  }
+
+  .people-list figure {
+    width: 41%;
+    margin-bottom: 25px;
+  }
+
+  .info-up {
+    font-size: 23px;
+  }
+
+  .info-down {
+    margin-top: 7px;
+    font-size: 16px;
+  }
+
+  .people-list li {
+    padding: 50px 0px;
+  }
+  /*=================================
+  people section styling ends here
+=================================*/
+  /*=================================
+  more section styling starts here
+=================================*/
+  .more-list {
+    display: flex;
+    gap: 35px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .more {
+    padding: 36px 0px 0px;
+  }
+
+  .more .wrapper {
+    padding-bottom: 25px;
+  }
+
+  .more-list li {
+    width: auto;
+  }
+
+  .more-list li figure {
+    margin-bottom: 34px;
+  }
+  /*=================================
+  more section styling ends here
+=================================*/
+  /*=================================
+  footer section styling ends here
+=================================*/
+  footer .wrapper {
+    flex-direction: column-reverse;
+    gap: 30px;
+    text-align: center;
+  }
+
+  footer ul {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  footer a::before {
+    font-size: 18px;
+  }
+
+  footer span {
+    font-size: 14px;
+  }
+  /*=================================
+  footer section styling starts here
+=================================*/
 }
 
 /*================================= 
