@@ -329,7 +329,7 @@ nav {
 .banner-content {
   position: absolute;
   z-index: 1;
-   left: 50%;
+  left: 50%;
   top: 49%;
   color: var(--secondary-color);
   transform: translate(-50%, -50%);
@@ -357,8 +357,7 @@ nav {
 }
 
 .card {
-  padding-bottom: 69px;
-  padding-top: 73px;
+  padding: 73px 0px 69px;
 }
 
 .card-list li {
@@ -403,8 +402,7 @@ nav {
   people styling starts here
 =================================*/
 .people {
-  padding-bottom: 90px;
-  padding-top: 78px;
+  padding: 78px 0px 90px;
   background-color: var(--primary-color);
   color: var(--secondary-color);
 }
@@ -670,14 +668,11 @@ banner styling ends here
   }
 
   .card-list li:first-child {
-    padding-bottom: 45px;
-    padding-left: 45px;
+    padding:0px 45px 45px;
   }
 
   .card-list li:last-child {
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-top: 45px;
+    padding: 45px 45px 0px 45px;
     border-bottom: none;
     border-left: none;
   }
@@ -817,8 +812,7 @@ banner styling ends here
   }
 
   .card {
-    padding-bottom: 49px;
-    padding-top: 38px;
+    padding: 38px 49px;
   }
 
   .card-list li {
@@ -835,9 +829,7 @@ banner styling ends here
   }
 
   .card-list li:last-child {
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-bottom:45px 0px 0px;
   }
 
   .card-button {
@@ -882,8 +874,7 @@ banner styling ends here
   }
 
   .people {
-    padding-bottom: 63px;
-    padding-top: 38px;
+    padding: 38px 0px 63px;
   }
 
   .people-list figure img {
@@ -994,8 +985,7 @@ banner styling ends here
   card section styling starts here
 =================================*/
   .card {
-    padding-bottom: 36px;
-    padding-top: 28px;
+    padding: 28px 36px;
   }
 
   .card-para {
@@ -1059,8 +1049,7 @@ banner styling ends here
   }
 
   .people {
-    padding-bottom: 49px;
-    padding-top: 33px;
+    padding: 33px 0px 49px;
   }
   /*=================================
   people section styling ends here
@@ -1138,8 +1127,7 @@ banner styling ends here
   }
 
   .card {
-    padding-bottom: 36px;
-    padding-top: 28px;
+    padding: 28px 0px 36px;
   }
 
   .card-para {
@@ -1174,8 +1162,7 @@ banner styling ends here
   }
 
   .people {
-    padding-bottom: 49px;
-    padding-top: 33px;
+    padding: 33px 0px 49px;
   }
   /*=================================
   people section styling ends here
@@ -1220,6 +1207,7 @@ banner styling ends here
     cursor: pointer;
     transition: all 1s;
   }
+
   footer a:hover::before {
     color: #808080;
     cursor: pointer;
