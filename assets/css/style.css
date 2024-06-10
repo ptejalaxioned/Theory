@@ -208,6 +208,12 @@ li {
 /*=================================
   Header styling starts here
 =================================*/
+:root {
+  --primary-color: #5386c1;
+  --secondary-color: #f0f8ff;
+  --tertiary-color: #858484;
+}
+
 .first-letter-caps {
   text-transform: capitalize;
 }
@@ -222,8 +228,7 @@ li {
 
 header {
   width: 100%;
-  padding-bottom: 0px;
-  padding-top: 50px;
+  padding:50px 0px 0px;
   position: absolute;
   z-index: 4;
   top: 0%;
@@ -236,14 +241,14 @@ header .wrapper {
 }
 
 h1 a {
-  color: aliceblue;
+  color: var(--secondary-color);
   font-size: 15px;
   font-weight: 500;
 }
 
 .nav-list li a {
-  padding: 10PX 10PX;
-  color: aliceblue;
+  padding: 10px 10px;
+  color: var(--secondary-color);
   font-size: 12px;
 }
 
@@ -257,49 +262,44 @@ nav {
 }
 
 .hamburger {
+  padding-top: 0px;
   display: none;
   position: relative;
-  padding-top: 0px;
 }
 
 .hamburger {
   padding-top: 10px;
-  display: flex;
   display: none;
   justify-content: center;
   flex-direction: column;
   gap: 3px;
 }
 
-
-.line{
+.line {
   display: flex;
-text-indent: -9999PX;
-line-height: 4PX;
+  line-height: 4px;
+  text-indent: -9999px;
 }
 
-
-.hamburger:hover .line2::before {
+.line2-onclick {
   display: none;
-  transition: 0.1s;
+  transition: all 1s;
 }
 
-.hamburger:hover .line1::before {
-  margin-left: 10px;
-  -webkit-transform: rotate(-45deg) translateY(4px);
+.line1-onclick {
   transform: rotate(-45deg) translateY(9px);
+  transition: transform 1s;
 }
 
-.hamburger:hover .line3::before {
-  margin-left: 10px;
-  -webkit-transform: rotate(45deg) translateY(-4px);
-  transform: rotate(45deg) translateY(-11px);
+.line3-onclick {
+  transform: rotate(45deg) translateY(-1px);
+  transition: transform 1s;
 }
 
 .line::before {
   content: "";
   width: 17px;
-  border-bottom: 3px solid aliceblue;
+  border-bottom: 3px solid var(--secondary-color);
   border-radius: 2px;
   display: inline-block;
   transform: translateY(-5px);
@@ -315,25 +315,23 @@ line-height: 4PX;
   banner styling starts here
 =================================*/
 .banner img {
-  border-top: 8px solid #5386c1;
+  border-top: 8px solid var(--primary-color);
 }
 
-
-.banner{
+.banner {
   position: relative;
 }
 
-.banner .wrapper
-  {
+.banner .wrapper {
   width: 100%;
-  }
+}
 
 .banner-content {
   position: absolute;
   z-index: 1;
+   left: 50%;
   top: 49%;
-  left: 50%;
-  color: aliceblue;
+  color: var(--secondary-color);
   transform: translate(-50%, -50%);
 }
 
@@ -385,7 +383,7 @@ line-height: 4PX;
 
 .card-para {
   padding: 16px 0px 24px;
-  color: #858484;
+  color: var(--tertiary-color);
   font-size: 12px;
   line-height: 18px;
 }
@@ -393,8 +391,8 @@ line-height: 4PX;
 .card-button {
   padding: 10px 18px;
   border: none;
-  background-color: #5386c1;
-  color: aliceblue;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 12px;
   font-weight: 500;
 }
@@ -407,8 +405,8 @@ line-height: 4PX;
 .people {
   padding-bottom: 90px;
   padding-top: 78px;
-  background-color: #5386c1;
-  color: aliceblue;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .people-list {
@@ -484,11 +482,11 @@ line-height: 4PX;
 }
 
 .more .common-heading {
-  color: #5386c1;
+  color: var(--primary-color);
 }
 
 .more .common-para {
-  color: #858484;
+  color: var(--tertiary-color);
 }
 /*=================================
   more styling ends here
@@ -504,7 +502,7 @@ footer {
 }
 
 footer span {
-  color: #858484;
+  color: var(--tertiary-color);
   font-size: 10px;
 }
 
@@ -525,7 +523,7 @@ footer a {
 
 footer a::before {
   display: flex;
-  color: #5386c1;
+  color: var(--primary-color);
   font-family: "FontAwesome";
   font-size: 13px;
   text-indent: 0px;
@@ -588,7 +586,6 @@ footer a::before {
   .wrapper {
     width: 89%;
   }
-
 }
 
 /*media query starts*/
@@ -607,7 +604,7 @@ footer a::before {
   }
 
   .line {
-    border-color: aliceblue;
+    border-color: var(--secondary-color);
   }
 
   .nav-list {
@@ -616,7 +613,7 @@ footer a::before {
     flex-direction: column;
     font-size: 15px;
     gap: 20px;
-    transform: translateX(464px);
+    transform: translateX(-1000px);
     transition: transform 1s;
   }
 
@@ -625,8 +622,8 @@ footer a::before {
     transition: transform 1s;
   }
 
-  .body-onclick{
-overflow: hidden;
+  .body-onclick {
+    overflow: hidden;
   }
   .nav-list {
     width: 100%;
@@ -636,15 +633,15 @@ overflow: hidden;
     z-index: 3;
     right: 0%;
     top: 131%;
-    background-color: #205ba5;
+    background-color: var(--primary-color);
     flex-direction: column;
     text-align: center;
   }
 
   .nav-list li a {
-    padding: 17PX 10PX;
+    padding: 17px 10px;
     font-size: 15px;
-}
+  }
   /*=================================
   header styling ends here
 =================================*/
@@ -975,16 +972,16 @@ banner styling ends here
   .wrapper {
     width: 90%;
   }
-/*=================================
+  /*=================================
   header section styling ends here
 =================================*/
-/*=================================
+  /*=================================
   banner section styling starts here
 =================================*/
   .banner p {
     font-size: 13px;
   }
- 
+
   .banner-content h2 {
     margin-bottom: 9px;
     font-size: 35px;
@@ -993,25 +990,25 @@ banner styling ends here
   /*=================================
   banner section styling ends here
 =================================*/
-/*=================================
+  /*=================================
   card section styling starts here
 =================================*/
   .card {
     padding-bottom: 36px;
     padding-top: 28px;
   }
- 
+
   .card-para {
     padding: 10px 0px 21px;
     font-size: 14px;
     line-height: 21px;
   }
- 
+
   .card-heading {
     font-size: 21px;
     line-height: 22px;
   }
- 
+
   .card-button {
     padding: 9px 18px;
     font-size: 14px;
@@ -1020,32 +1017,32 @@ banner styling ends here
   .card-list li {
     padding: 30px 0px;
   }
- /*=================================
+  /*=================================
   card section styling ends here
 =================================*/
-/*=================================
+  /*=================================
   more section styling starts here
 =================================*/
   .common-heading {
     font-size: 27px;
   }
- 
+
   .common-para {
     font-size: 14px;
   }
- 
+
   .info-up {
     font-size: 19px;
   }
- 
+
   .info-down {
     font-size: 14px;
   }
- 
+
   .more-list li figure {
     margin-bottom: 21px;
   }
-    /*=================================
+  /*=================================
   more section styling ends here
 =================================*/
   /*=================================
@@ -1054,86 +1051,86 @@ banner styling ends here
   .people-list {
     gap: 30px;
   }
- 
+
   .people-list li {
     width: 90%;
     padding: 30px 0px;
     margin: auto;
   }
- 
+
   .people {
     padding-bottom: 49px;
     padding-top: 33px;
   }
- /*=================================
+  /*=================================
   people section styling ends here
 =================================*/
- /*=================================
+  /*=================================
   footer section styling starts here
 =================================*/
   footer ul {
     gap: 15px;
   }
- 
+
   footer a::before {
     font-size: 16px;
   }
- 
+
   footer span {
     font-size: 11px;
   }
-/*=================================
+  /*=================================
   footer section styling ends here
 =================================*/
- }
+}
 
- /*media query for 320px starts here*/
+/*media query for 320px starts here*/
 @media only screen and (max-width: 320px) {
-   /*=================================
+  /*=================================
   banner section styling starts here
 =================================*/
   .wrapper {
     width: 90%;
   }
- 
+
   .banner p {
     font-size: 13px;
   }
- 
+
   .banner-content h2 {
     margin-bottom: 9px;
     font-size: 31px;
     line-height: 35px;
   }
- /*=================================
+  /*=================================
   banner section styling ends here
 =================================*/
-/*=================================
+  /*=================================
   more section styling starts here
 =================================*/
   .common-heading {
     font-size: 27px;
   }
- 
+
   .common-para {
     font-size: 14px;
   }
- 
+
   .info-up {
     font-size: 19px;
   }
- 
+
   .info-down {
     font-size: 14px;
   }
- 
+
   .more-list li figure {
     margin-bottom: 21px;
   }
   /*=================================
   more section styling ends here
 =================================*/
-    /*=================================
+  /*=================================
   card section styling starts here
 =================================*/
   .card-list li {
@@ -1144,23 +1141,23 @@ banner styling ends here
     padding-bottom: 36px;
     padding-top: 28px;
   }
- 
+
   .card-para {
     padding: 10px 0px 21px;
     font-size: 14px;
     line-height: 21px;
   }
- 
+
   .card-heading {
     font-size: 21px;
     line-height: 22px;
   }
- 
+
   .card-button {
     padding: 9px 18px;
     font-size: 14px;
   }
-   /*=================================
+  /*=================================
   card section styling ends here
 =================================*/
   /*=================================
@@ -1169,39 +1166,39 @@ banner styling ends here
   .people-list {
     gap: 30px;
   }
- 
+
   .people-list li {
     width: 90%;
     padding: 30px 0px;
     margin: auto;
   }
- 
+
   .people {
     padding-bottom: 49px;
     padding-top: 33px;
   }
- /*=================================
+  /*=================================
   people section styling ends here
 =================================*/
-/*=================================
+  /*=================================
   footer section styling starts here
 =================================*/
   footer ul {
     gap: 15px;
   }
- 
+
   footer a::before {
     font-size: 16px;
   }
- 
+
   footer span {
     font-size: 11px;
   }
   /*=================================
   footer section styling ends here
 =================================*/
- }
- 
+}
+
 /*================================= 
  Hover styling starts here
  =================================*/
