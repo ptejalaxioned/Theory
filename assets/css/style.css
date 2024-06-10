@@ -223,14 +223,15 @@ li {
 header {
   width: 100%;
   padding-bottom: 0px;
-  padding-top: 60px;
+  padding-top: 50px;
   position: absolute;
-  z-index: 2;
+  z-index: 4;
   top: 0%;
 }
 
 header .wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -240,13 +241,14 @@ h1 a {
   font-weight: 500;
 }
 
-.nav-list a {
+.nav-list li a {
+  padding: 10PX 10PX;
   color: aliceblue;
   font-size: 12px;
 }
 
 nav {
-  width: 19%;
+  width: 19.5%;
 }
 
 .nav-list {
@@ -261,6 +263,7 @@ nav {
 }
 
 .hamburger {
+  padding-top: 10px;
   display: flex;
   display: none;
   justify-content: center;
@@ -268,31 +271,38 @@ nav {
   gap: 3px;
 }
 
-.hamburger:hover .line2 {
+
+.line{
+  display: flex;
+text-indent: -9999PX;
+line-height: 4PX;
+}
+
+
+.hamburger:hover .line2::before {
   display: none;
   transition: 0.1s;
 }
 
-.hamburger:hover .line1 {
+.hamburger:hover .line1::before {
   margin-left: 10px;
   -webkit-transform: rotate(-45deg) translateY(4px);
-  transform: rotate(-45deg) translateY(4px);
+  transform: rotate(-45deg) translateY(9px);
 }
 
-.hamburger:hover .line3 {
+.hamburger:hover .line3::before {
   margin-left: 10px;
   -webkit-transform: rotate(45deg) translateY(-4px);
-  transform: rotate(45deg) translateY(-4px);
+  transform: rotate(45deg) translateY(-11px);
 }
 
-.line {
+.line::before {
   content: "";
-  width: 100%;
+  width: 17px;
   border-bottom: 3px solid aliceblue;
-  border-radius: 8px;
+  border-radius: 2px;
   display: inline-block;
   transform: translateY(-5px);
-  width: 17px;
 }
 /*=================================
   Header styling ends here
@@ -320,8 +330,8 @@ nav {
 
 .banner-content {
   position: absolute;
-  z-index: 3;
-  top: 27%;
+  z-index: 1;
+  top: 49%;
   left: 50%;
   color: aliceblue;
   transform: translate(-50%, -50%);
@@ -566,9 +576,6 @@ footer a::before {
   nav {
     width: 19%;
   }
-  .banner-content {
-    top: 33%;
-  }
 }
 
 /*media query for 1024px starts here*/
@@ -582,9 +589,6 @@ footer a::before {
     width: 89%;
   }
 
-  .banner-content {
-    top: 31%;
-  }
 }
 
 /*media query starts*/
@@ -608,26 +612,39 @@ footer a::before {
 
   .nav-list {
     display: flex;
-    display: none;
     justify-content: center;
     flex-direction: column;
     font-size: 15px;
     gap: 20px;
+    transform: translateX(464px);
+    transition: transform 1s;
   }
 
+  .nav-list-onclick {
+    transform: translateX(0px);
+    transition: transform 1s;
+  }
+
+  .body-onclick{
+overflow: hidden;
+  }
   .nav-list {
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     display: flex;
-    display: none;
     position: absolute;
-    z-index: 10;
+    z-index: 3;
     right: 0%;
-    top: 100%;
+    top: 131%;
     background-color: #205ba5;
     flex-direction: column;
     text-align: center;
   }
+
+  .nav-list li a {
+    padding: 17PX 10PX;
+    font-size: 15px;
+}
   /*=================================
   header styling ends here
 =================================*/
@@ -637,10 +654,6 @@ footer a::before {
   .banner img {
     height: 60vh;
     object-fit: cover;
-  }
-
-  .banner-content {
-    top: 34%;
   }
   /*=================================
 banner styling ends here
@@ -786,8 +799,7 @@ banner styling ends here
 
   .banner-content {
     width: 90%;
-    z-index: 3;
-    top: 30.5%;
+    z-index: 1;
     left: 49%;
   }
   /*=================================
