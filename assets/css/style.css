@@ -561,134 +561,132 @@ footer a::before {
   }
 }
 
-
 /*media query for 1024px starts here*/
 @media only screen and (max-width: 1024px) {
   .banner img {
     height: 53vh;
     object-fit: cover;
- }
+  }
 
- .wrapper {
-  width: 89%;
- }
- }
- 
- /*media query starts*/
+  .wrapper {
+    width: 89%;
+  }
+}
+
+/*media query starts*/
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
- /*=================================
+  /*=================================
   header styling starts here
 =================================*/
- .wrapper {
-   width: 85%;
-}
+  .wrapper {
+    width: 85%;
+  }
 
-.hamburger {
-  display: flex;
-  z-index: 3;
-}
+  .hamburger {
+    display: flex;
+    z-index: 3;
+  }
 
-.line {
-  border-color: aliceblue;
-}
+  .line {
+    border-color: aliceblue;
+  }
 
-.nav-list {
-  display: flex;
-  display: none;
-  justify-content: center;
-  flex-direction: column;
-  font-size: 15px;
-  gap: 20px;
-}
+  .nav-list {
+    display: flex;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    gap: 20px;
+  }
 
-
-.nav-list {
-  width: 100%;
-  height: 70vh;
-  display: flex;
-  display: none;
-  position: absolute;
-  z-index: 10;
-  right: 0%;
-  top: 100%;
-  background-color: #205ba5;
-  flex-direction: column;
-  text-align: center;
-}
-/*=================================
+  .nav-list {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    display: none;
+    position: absolute;
+    z-index: 10;
+    right: 0%;
+    top: 100%;
+    background-color: #205ba5;
+    flex-direction: column;
+    text-align: center;
+  }
+  /*=================================
   header styling ends here
 =================================*/
-/*=================================
+  /*=================================
   banner styling starts here
 =================================*/
- .banner img {
-   height: 66vh;
-   object-fit: cover;
- }
+  .banner img {
+    height: 66vh;
+    object-fit: cover;
+  }
 
- .banner-content {
-   top: 34%;
- }
-/*=================================
+  .banner-content {
+    top: 34%;
+  }
+  /*=================================
 banner styling ends here
 =================================*/
-/*=================================
+  /*=================================
   card section styling starts here
 =================================*/
- .card-list {
-   justify-content: center;
-   flex-wrap: wrap;
- }
+  .card-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
- .card-list li {
-   width: 43%;
-   border-bottom: 0.5px solid #808080a0;
-   text-align: center;
- }
+  .card-list li {
+    width: 43%;
+    border-bottom: 0.5px solid #808080a0;
+    text-align: center;
+  }
 
- .card-list li:first-child {
-  padding-bottom: 45px;
-   padding-left: 45px;
- }
+  .card-list li:first-child {
+    padding-bottom: 45px;
+    padding-left: 45px;
+  }
 
- .card-list li:last-child {
-   padding-left: 45px;
-   padding-right: 45px;
-   padding-top: 45px;
-   border-bottom: none;
-   border-left: none;
- }
-/*=================================
+  .card-list li:last-child {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 45px;
+    border-bottom: none;
+    border-left: none;
+  }
+  /*=================================
   card section styling ends here
 =================================*/
-/*=================================
+  /*=================================
   people section styling starts here
 =================================*/
- .people-list {
-   justify-content: center;
-   flex-wrap: wrap;
-   gap: 38px;
- }
+  .people-list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 38px;
+  }
 
- .people-list li {
-   width: 38%;
- }
-/*=================================
+  .people-list li {
+    width: 38%;
+  }
+  /*=================================
   people section styling ends here
 =================================*/
-/*=================================
+  /*=================================
   more section styling starts here
 =================================*/
- .more-list {
-   justify-content: center;
-   flex-wrap: wrap;
- }
+  .more-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
- .more-list li {
-   width: 40%;
- }
-/*=================================
+  .more-list li {
+    width: 40%;
+  }
+  /*=================================
   more section styling ends here
 =================================*/
 }
@@ -697,20 +695,45 @@ banner styling ends here
 @media only screen and (max-width: 768px) {
   .banner-content {
     width: 70%;
-   text-align: center;
+    text-align: center;
   }
 
   .banner-content h2 {
-   font-size: 40px;
+    font-size: 40px;
   }
   .people-list li {
     width: 46%;
-   }
- 
+  }
+
   .more-list li {
-   width: 45%;
+    width: 45%;
   }
+}
+
+/*media query for 640px starts here*/
+@media only screen and (max-width: 640px) {
+  .banner-content h2 {
+    font-size: 35px;
   }
+
+  .banner-content {
+    width: 70%;
+    text-align: center;
+  }
+
+  .card-list li {
+    width: 48%;
+  }
+
+  .people-list li {
+    width: 45%;
+  }
+  
+  .more-list li {
+    width: 44%;
+  }
+}
+
 /*================================= 
  Hover styling starts here
  =================================*/
