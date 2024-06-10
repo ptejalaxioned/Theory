@@ -550,6 +550,17 @@ footer a::before {
   }
 }
 
+/*media query for 1280px starts here*/
+@media only screen and (max-width: 1280px) {
+  .wrapper {
+    width: 76%;
+  }
+
+  nav {
+    width: 19%;
+  }
+}
+
 /*================================= 
  Hover styling starts here
  =================================*/
