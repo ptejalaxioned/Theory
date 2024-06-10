@@ -214,17 +214,9 @@ li {
   --tertiary-color: #858484;
 }
 
-.first-letter-caps {
-  text-transform: capitalize;
-}
-
-.single-letter-caps::first-letter {
-  text-transform: uppercase;
-}
-
-.wrapper {
-  width: 68%;
-}
+.first-letter-caps { text-transform: capitalize; }
+.single-letter-caps::first-letter { text-transform: uppercase; }
+.wrapper { width: 68%; }
 
 header {
   width: 100%;
@@ -252,9 +244,7 @@ h1 a {
   font-size: 12px;
 }
 
-nav {
-  width: 19.5%;
-}
+nav { width: 19.5%; }
 
 .nav-list {
   display: flex;
@@ -314,17 +304,9 @@ nav {
 /*=================================
   banner styling starts here
 =================================*/
-.banner img {
-  border-top: 8px solid var(--primary-color);
-}
-
-.banner {
-  position: relative;
-}
-
-.banner .wrapper {
-  width: 100%;
-}
+.banner img { border-top: 8px solid var(--primary-color); }
+.banner { position: relative; }
+.banner .wrapper { width: 100%; }
 
 .banner-content {
   position: absolute;
@@ -352,13 +334,8 @@ nav {
 /*=================================
   card styling starts here
 =================================*/
-.card-list {
-  display: flex;
-}
-
-.card {
-  padding: 73px 0px 69px;
-}
+.card-list { display: flex; }
+.card { padding: 73px 0px 69px; }
 
 .card-list li {
   padding: 0px 45px;
@@ -370,9 +347,7 @@ nav {
   border-left: none;
 }
 
-.card-list li:last-child {
-  padding-right: 0px;
-}
+.card-list li:last-child { padding-right: 0px; }
 
 .card-heading {
   color: #5386c1;
@@ -424,9 +399,7 @@ nav {
   margin-bottom: 22px;
 }
 
-.people-list figure img {
-  border-radius: 100px;
-}
+.people-list figure img { border-radius: 100px; }
 
 .info {
   display: flex;
@@ -456,9 +429,7 @@ nav {
 /*=================================
   more styling starts here
 =================================*/
-.more {
-  padding: 76px 0px 0px;
-}
+.more { padding: 76px 0px 0px; }
 
 .more .wrapper {
   padding-bottom: 76px;
@@ -475,17 +446,9 @@ nav {
   flex-direction: column;
 }
 
-.more-list li figure {
-  margin-bottom: 23px;
-}
-
-.more .common-heading {
-  color: var(--primary-color);
-}
-
-.more .common-para {
-  color: var(--tertiary-color);
-}
+.more-list li figure { margin-bottom: 23px; }
+.more .common-heading { color: var(--primary-color); }
+.more .common-para { color: var(--tertiary-color);}
 /*=================================
   more styling ends here
 =================================*/
@@ -495,9 +458,7 @@ nav {
 /*=================================
   footer styling starts here
 =================================*/
-footer {
-  padding: 34px 0px;
-}
+footer { padding: 34px 0px; }
 
 footer span {
   color: var(--tertiary-color);
@@ -527,25 +488,11 @@ footer a::before {
   text-indent: 0px;
 }
 
-.facebook::before {
-  content: "\f09a";
-}
-
-.linkdin::before {
-  content: "\f0e1";
-}
-
-.twitter::before {
-  content: "\f099";
-}
-
-.v::before {
-  content: "\f27d";
-}
-
-.pintrest::before {
-  content: "\f231";
-}
+.facebook::before { content: "\f09a"; }
+.linkdin::before { content: "\f0e1";}
+.twitter::before { content: "\f099"; }
+.v::before { content: "\f27d"; }
+.pintrest::before { content: "\f231";}
 
 /*=================================
   footer styling ends here
@@ -554,24 +501,14 @@ footer a::before {
 /*media query starts*/
 /*media query for 1440px starts here*/
 @media only screen and (max-width: 1440px) {
-  .wrapper {
-    width: 74%;
-  }
-
-  nav {
-    width: 17%;
-  }
+  .wrapper { width: 74%;}
+  nav { width: 17%;}
 }
 
 /*media query for 1280px starts here*/
 @media only screen and (max-width: 1280px) {
-  .wrapper {
-    width: 76%;
-  }
-
-  nav {
-    width: 19%;
-  }
+  .wrapper { width: 76%;}
+  nav { width: 19%;}
 }
 
 /*media query for 1024px starts here*/
@@ -581,9 +518,7 @@ footer a::before {
     object-fit: cover;
   }
 
-  .wrapper {
-    width: 89%;
-  }
+  .wrapper { width: 89%;}
 }
 
 /*media query starts*/
@@ -592,18 +527,14 @@ footer a::before {
   /*=================================
   header styling starts here
 =================================*/
-  .wrapper {
-    width: 85%;
-  }
+  .wrapper { width: 85%;}
 
   .hamburger {
     display: flex;
     z-index: 3;
   }
 
-  .line {
-    border-color: var(--secondary-color);
-  }
+  .line { border-color: var(--secondary-color); }
 
   .nav-list {
     display: flex;
@@ -620,9 +551,8 @@ footer a::before {
     transition: transform 1s;
   }
 
-  .body-onclick {
-    overflow: hidden;
-  }
+  .body-onclick { overflow: hidden;}
+
   .nav-list {
     width: 100%;
     height: 100vh;
@@ -667,9 +597,7 @@ banner styling ends here
     text-align: center;
   }
 
-  .card-list li:first-child {
-    padding:0px 45px 45px;
-  }
+  .card-list li:first-child { padding:0px 45px 45px; }
 
   .card-list li:last-child {
     padding: 45px 45px 0px 45px;
@@ -688,9 +616,7 @@ banner styling ends here
     gap: 38px;
   }
 
-  .people-list li {
-    width: 38%;
-  }
+  .people-list li { width: 38%; }
   /*=================================
   people section styling ends here
 =================================*/
@@ -702,9 +628,7 @@ banner styling ends here
     flex-wrap: wrap;
   }
 
-  .more-list li {
-    width: 40%;
-  }
+  .more-list li { width: 40%; }
   /*=================================
   more section styling ends here
 =================================*/
@@ -717,40 +641,23 @@ banner styling ends here
     text-align: center;
   }
 
-  .banner-content h2 {
-    font-size: 40px;
-  }
-  .people-list li {
-    width: 46%;
-  }
-
-  .more-list li {
-    width: 45%;
-  }
+  .banner-content h2 { font-size: 40px; }
+  .people-list li { width: 46%; }
+  .more-list li { width: 45%; }
 }
 
 /*media query for 640px starts here*/
 @media only screen and (max-width: 640px) {
-  .banner-content h2 {
-    font-size: 35px;
-  }
+  .banner-content h2 { font-size: 35px;}
 
   .banner-content {
     width: 70%;
     text-align: center;
   }
 
-  .card-list li {
-    width: 48%;
-  }
-
-  .people-list li {
-    width: 45%;
-  }
-
-  .more-list li {
-    width: 44%;
-  }
+  .card-list li { width: 48%;}
+  .people-list li { width: 45%;}
+  .more-list li { width: 44%; }
 }
 
 /*media query for 480px starts here*/
@@ -758,29 +665,21 @@ banner styling ends here
   /*=================================
   header section styling starts here
 =================================*/
-  header {
-    padding-top: 33px;
-  }
-
-  .wrapper {
-    width: 85%;
-  }
+  header {  padding-top: 33px; }
+  .wrapper { width: 85%; }
   /*=================================
   header section styling endss here
 =================================*/
   /*=================================
   banner section styling starts here
 =================================*/
-
   .banner figure img {
     width: 100%;
     height: 56vh;
     object-fit: cover;
   }
 
-  .banner p {
-    font-size: 17px;
-  }
+  .banner p { font-size: 17px; }
 
   .banner-content h2 {
     margin-bottom: 28px;
@@ -811,9 +710,7 @@ banner styling ends here
     text-align: center;
   }
 
-  .card {
-    padding: 38px 49px;
-  }
+  .card { padding: 38px 49px; }
 
   .card-list li {
     padding: 40px 0px 43px;
@@ -828,9 +725,7 @@ banner styling ends here
     border-top: none;
   }
 
-  .card-list li:last-child {
-    padding-bottom:45px 0px 0px;
-  }
+  .card-list li:last-child { padding-bottom:45px 0px 0px; }
 
   .card-button {
     width: 100%;
@@ -859,9 +754,7 @@ banner styling ends here
     font-size: 17px;
   }
 
-  .common-heading {
-    font-size: 32px;
-  }
+  .common-heading { font-size: 32px; }
 
   .people-list {
     flex-direction: column;
@@ -873,31 +766,22 @@ banner styling ends here
     margin: auto;
   }
 
-  .people {
-    padding: 38px 0px 63px;
-  }
-
-  .people-list figure img {
-    border-radius: 124px;
-  }
+  .people { padding: 38px 0px 63px; }
+  .people-list figure img { border-radius: 124px; }
 
   .people-list figure {
     width: 41%;
     margin-bottom: 25px;
   }
 
-  .info-up {
-    font-size: 23px;
-  }
+  .info-up { font-size: 23px; }
 
   .info-down {
     margin-top: 7px;
     font-size: 16px;
   }
 
-  .people-list li {
-    padding: 50px 0px;
-  }
+  .people-list li { padding: 50px 0px; }
   /*=================================
   people section styling ends here
 =================================*/
@@ -911,21 +795,10 @@ banner styling ends here
     text-align: center;
   }
 
-  .more {
-    padding: 36px 0px 0px;
-  }
-
-  .more .wrapper {
-    padding-bottom: 25px;
-  }
-
-  .more-list li {
-    width: auto;
-  }
-
-  .more-list li figure {
-    margin-bottom: 34px;
-  }
+  .more { padding: 36px 0px 0px; }
+  .more .wrapper { padding-bottom: 25px; }
+  .more-list li { width: auto;}
+  .more-list li figure { margin-bottom: 34px; }
   /*=================================
   more section styling ends here
 =================================*/
@@ -943,13 +816,8 @@ banner styling ends here
     gap: 20px;
   }
 
-  footer a::before {
-    font-size: 18px;
-  }
-
-  footer span {
-    font-size: 14px;
-  }
+  footer a::before { font-size: 18px; }
+  footer span { font-size: 14px; }
   /*=================================
   footer section styling starts here
 =================================*/
@@ -960,18 +828,14 @@ banner styling ends here
   /*=================================
   header section styling starts here
 =================================*/
-  .wrapper {
-    width: 90%;
-  }
+  .wrapper { width: 90%; }
   /*=================================
   header section styling ends here
 =================================*/
   /*=================================
   banner section styling starts here
 =================================*/
-  .banner p {
-    font-size: 13px;
-  }
+  .banner p { font-size: 13px; }
 
   .banner-content h2 {
     margin-bottom: 9px;
@@ -984,9 +848,7 @@ banner styling ends here
   /*=================================
   card section styling starts here
 =================================*/
-  .card {
-    padding: 28px 36px;
-  }
+  .card { padding: 28px 36px; }
 
   .card-para {
     padding: 10px 0px 21px;
@@ -1004,43 +866,25 @@ banner styling ends here
     font-size: 14px;
   }
 
-  .card-list li {
-    padding: 30px 0px;
-  }
+  .card-list li { padding: 30px 0px;}
   /*=================================
   card section styling ends here
 =================================*/
   /*=================================
   more section styling starts here
 =================================*/
-  .common-heading {
-    font-size: 27px;
-  }
-
-  .common-para {
-    font-size: 14px;
-  }
-
-  .info-up {
-    font-size: 19px;
-  }
-
-  .info-down {
-    font-size: 14px;
-  }
-
-  .more-list li figure {
-    margin-bottom: 21px;
-  }
+  .common-heading { font-size: 27px;}
+  .common-para { font-size: 14px; }
+  .info-up { font-size: 19px; }
+  .info-down { font-size: 14px; }
+  .more-list li figure { margin-bottom: 21px; }
   /*=================================
   more section styling ends here
 =================================*/
   /*=================================
   people section styling starts here
 =================================*/
-  .people-list {
-    gap: 30px;
-  }
+  .people-list { gap: 30px; }
 
   .people-list li {
     width: 90%;
@@ -1048,26 +892,16 @@ banner styling ends here
     margin: auto;
   }
 
-  .people {
-    padding: 33px 0px 49px;
-  }
+  .people { padding: 33px 0px 49px; }
   /*=================================
   people section styling ends here
 =================================*/
   /*=================================
   footer section styling starts here
 =================================*/
-  footer ul {
-    gap: 15px;
-  }
-
-  footer a::before {
-    font-size: 16px;
-  }
-
-  footer span {
-    font-size: 11px;
-  }
+  footer ul { gap: 15px; }
+  footer a::before { font-size: 16px; }
+  footer span { font-size: 11px; }
   /*=================================
   footer section styling ends here
 =================================*/
@@ -1078,13 +912,8 @@ banner styling ends here
   /*=================================
   banner section styling starts here
 =================================*/
-  .wrapper {
-    width: 90%;
-  }
-
-  .banner p {
-    font-size: 13px;
-  }
+  .wrapper { width: 90%; }
+  .banner p { font-size: 13px;}
 
   .banner-content h2 {
     margin-bottom: 9px;
@@ -1097,38 +926,19 @@ banner styling ends here
   /*=================================
   more section styling starts here
 =================================*/
-  .common-heading {
-    font-size: 27px;
-  }
-
-  .common-para {
-    font-size: 14px;
-  }
-
-  .info-up {
-    font-size: 19px;
-  }
-
-  .info-down {
-    font-size: 14px;
-  }
-
-  .more-list li figure {
-    margin-bottom: 21px;
-  }
+  .common-heading { font-size: 27px;}
+  .common-para { font-size: 14px;}
+  .info-up { font-size: 19px; }
+  .info-down { font-size: 14px;}
+  .more-list li figure { margin-bottom: 21px;}
   /*=================================
   more section styling ends here
 =================================*/
   /*=================================
   card section styling starts here
 =================================*/
-  .card-list li {
-    padding: 30px 0px;
-  }
-
-  .card {
-    padding: 28px 0px 36px;
-  }
+  .card-list li { padding: 30px 0px;}
+  .card { padding: 28px 0px 36px;}
 
   .card-para {
     padding: 10px 0px 21px;
@@ -1151,9 +961,7 @@ banner styling ends here
   /*=================================
   people section styling starts here
 =================================*/
-  .people-list {
-    gap: 30px;
-  }
+  .people-list { gap: 30px; }
 
   .people-list li {
     width: 90%;
@@ -1161,26 +969,16 @@ banner styling ends here
     margin: auto;
   }
 
-  .people {
-    padding: 33px 0px 49px;
-  }
+  .people { padding: 33px 0px 49px; }
   /*=================================
   people section styling ends here
 =================================*/
   /*=================================
   footer section styling starts here
 =================================*/
-  footer ul {
-    gap: 15px;
-  }
-
-  footer a::before {
-    font-size: 16px;
-  }
-
-  footer span {
-    font-size: 11px;
-  }
+  footer ul { gap: 15px; }
+  footer a::before { font-size: 16px;}
+  footer span { font-size: 11px;}
   /*=================================
   footer section styling ends here
 =================================*/
