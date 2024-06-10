@@ -693,7 +693,24 @@ banner styling ends here
 =================================*/
 }
 
+/*media query for 768px starts here*/
+@media only screen and (max-width: 768px) {
+  .banner-content {
+    width: 70%;
+   text-align: center;
+  }
+
+  .banner-content h2 {
+   font-size: 40px;
+  }
+  .people-list li {
+    width: 46%;
+   }
  
+  .more-list li {
+   width: 45%;
+  }
+  }
 /*================================= 
  Hover styling starts here
  =================================*/
